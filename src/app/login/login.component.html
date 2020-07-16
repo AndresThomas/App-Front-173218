@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="text-align: center;">
+        <div *ngFor= 'let userIterator of user'>
+            <img src="{{userIterator.picture.thumbnail}}" alt="">
+            <h1>Gender: {{userIterator.gender}}</h1>
+            <h1>Names: {{userIterator.name.title}} {{ userIterator.name.first }} {{ userIterator.name.last }}</h1>
+            <h1>N# of Street: {{userIterator.location.street.number}} Name:{{userIterator.location.street.name}}</h1>
+            <h1>City: {{userIterator.location.city}}</h1>
+            <h1>CP: {{userIterator.location.postcode}}</h1>
+            <h1>Email: {{userIterator.email}}</h1>
+            <h1>Phone number: {{userIterator.phone}}</h1>
+            <h1>********************************</h1>
+        </div>
+
+    </div>
+</body>
+</html>

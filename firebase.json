@@ -1,0 +1,17 @@
+{
+  "firebase": "<FirebaseAppName>",
+  "hosting": {
+    "public": "dist/AppClienteServidor",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
